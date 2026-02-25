@@ -1,0 +1,140 @@
+https://github.com/lahariyamsani-6/The-snap-style.git
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ── Radius ── */
+    --radius: 0.75rem;
+
+    /* ── Brand: warm terracotta ── */
+    --brand: 0.62 0.14 38;
+    --brand-light: 0.82 0.10 55;
+    --brand-foreground: 0.99 0 0;
+
+    /* ── Backgrounds ── */
+    --background: 0.98 0.008 75;       /* warm off-white */
+    --surface: 0.96 0.010 72;          /* slightly deeper warm */
+    --card: 0.99 0.004 70;             /* near-white card */
+    --card-foreground: 0.15 0.01 30;
+
+    /* ── Foreground ── */
+    --foreground: 0.15 0.01 30;        /* near-black warm */
+    --popover: 0.99 0.004 70;
+    --popover-foreground: 0.15 0.01 30;
+
+    /* ── Primary (dark charcoal) ── */
+    --primary: 0.18 0.01 30;
+    --primary-foreground: 0.98 0.004 70;
+
+    /* ── Secondary ── */
+    --secondary: 0.93 0.012 72;
+    --secondary-foreground: 0.18 0.01 30;
+
+    /* ── Muted ── */
+    --muted: 0.93 0.010 72;
+    --muted-foreground: 0.52 0.02 40;
+
+    /* ── Accent (terracotta tint) ── */
+    --accent: 0.93 0.025 50;
+    --accent-foreground: 0.18 0.01 30;
+
+    /* ── Destructive ── */
+    --destructive: 0.58 0.22 27;
+    --destructive-foreground: 0.99 0 0;
+
+    /* ── Border / Input / Ring ── */
+    --border: 0.88 0.012 70;
+    --input: 0.88 0.012 70;
+    --ring: 0.62 0.14 38;
+
+    /* ── Charts ── */
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    /* ── Sidebar ── */
+    --sidebar: 0.96 0.010 72;
+    --sidebar-foreground: 0.15 0.01 30;
+    --sidebar-primary: 0.62 0.14 38;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.93 0.025 50;
+    --sidebar-accent-foreground: 0.18 0.01 30;
+    --sidebar-border: 0.88 0.012 70;
+    --sidebar-ring: 0.62 0.14 38;
+  }
+
+  .dark {
+    --background: 0.13 0.01 30;
+    --surface: 0.17 0.012 30;
+    --card: 0.19 0.012 30;
+    --card-foreground: 0.95 0.008 70;
+
+    --foreground: 0.95 0.008 70;
+    --popover: 0.19 0.012 30;
+    --popover-foreground: 0.95 0.008 70;
+
+    --primary: 0.92 0.008 70;
+    --primary-foreground: 0.18 0.01 30;
+
+    --secondary: 0.24 0.012 30;
+    --secondary-foreground: 0.92 0.008 70;
+
+    --muted: 0.24 0.012 30;
+    --muted-foreground: 0.65 0.015 50;
+
+    --accent: 0.28 0.025 40;
+    --accent-foreground: 0.92 0.008 70;
+
+    --destructive: 0.70 0.19 22;
+    --destructive-foreground: 0.19 0.012 30;
+
+    --border: 1 0 0 / 10%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.72 0.12 38;
+
+    --brand: 0.72 0.14 38;
+    --brand-light: 0.85 0.10 55;
+    --brand-foreground: 0.99 0 0;
+
+    --sidebar: 0.19 0.012 30;
+    --sidebar-foreground: 0.95 0.008 70;
+    --sidebar-primary: 0.72 0.14 38;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.28 0.025 40;
+    --sidebar-accent-foreground: 0.92 0.008 70;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.72 0.12 38;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
